@@ -1,3 +1,31 @@
-<p> <%= params[:question] %> </p> <p><em> -You </em></p>
 
-<p> <%= @answer %> </p> <p><em> -Your Coach</em></p>
+<section class="vh-100" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex align-items-center h-100">
+      <div class="col col-lg-6 mb-4 mb-lg-0">
+        <figure class="bg-white p-3 rounded" style="border-left: .25rem solid black;">
+          <blockquote class="blockquote pb-2">
+            <p>
+              <%= params[:question] %>
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 font-italic">
+            <em> You </em>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col col-lg-6">
+        <figure class="bg-white p-3 rounded" style="border-left: .25rem solid red;">
+          <blockquote class="blockquote pb-2">
+            <p>
+              <%= @answer %>
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 font-italic">
+            <em> Your Coach</em>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>

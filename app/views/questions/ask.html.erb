@@ -1,8 +1,9 @@
 
 
-<p>Hello, I am your coach, what did you want to tell me?</p>
+<p><h3>Hello, I am your coach, what did you want to tell me?</h3></p>
 
 <form action="/answer" data-turbo="false" method="get">
   <input type="text" name="question" value="<%= params[:question] %>">
-  <input type="submit" value="Ask!">
+
+  <a class="btn btn-primary" href="#" role="button" input type="submit" >Ask! </a>
 </form>
