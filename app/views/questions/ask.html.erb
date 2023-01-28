@@ -1,0 +1,8 @@
+
+
+<p>Hello, I am your coach, what did you want to tell me?</p>
+
+<form action="/answer" data-turbo="false" method="get">
+  <input type="text" name="question" value="<%= params[:question] %>">
+  <input type="submit" value="Ask!">
+</form>
